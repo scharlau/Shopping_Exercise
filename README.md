@@ -8,12 +8,20 @@ This example is a simplified and modified version of the 'Depot' example found i
 
 ## Setting Up the Exercises ##
 
-Pull the Git repository via download, or by cloning to your computer. Then run the seed_tables script to populate your database with the command:
+Pull the Git repository via download, or by cloning to your computer. Run
+
+    bundle install
+
+To get all of the gems sorted. Now run the migrations with either rails or rake command depending upon your platform.
+
+    rails db:migrate
+
+This will set up your database, and now you can run the seed_tables script to populate your database with the command:
 
     bin/rake products:seed_tables
 
 This will generate data using the Faker gem that we can use in the exercises.
-You can now see the following items in the application:
+After you start the rails server you can now see the following items in the application:
 * localhost:3000/customers
 * localhost:3000/products
 * localhost:3000/line_items
