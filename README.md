@@ -6,7 +6,7 @@ This is a 'deliberate practice' exercise for working with Rails. As before, the 
 
 This example is a simplified and modified version of the 'Depot' example found in "Agile Web Development with Rails" from Pragmatic Programmers (https://pragprog.com/book/rails5/agile-web-development-with-rails-5) We're using this example, because it lets us quickly get to the relationships that we want to explore. This example also uses the Faker Gem from https://github.com/stympy/faker to generate sample data for the application.
 
-## Do the Exercises ##
+## Setting Up the Exercises ##
 
 Pull the Git repository via download, or by cloning to your computer. Then run the seed_tables script to populate your database with the command:
 
@@ -21,7 +21,9 @@ You can now see the following items in the application:
 
 In their current state the line_items and orders pages are not very helpful, because they show Class objects where you'd expect to see a customer name, product name, or cart_id, although actually you don't need to ever see the cart_id, because it's only used as a staging area for the shopping cart.
 
-Then work through the three rounds with a partner, or on your own, depending upon your circumstances. Each round should be twelve minutes, followed by a discussion of where you are and what has been working, as well as, what you're working on next.
+## Do the Work ##
+
+Work through the three rounds with a partner, or on your own, depending upon your circumstances. Each round should be twelve minutes, followed by a discussion of where you are and what has been working, as well as, what you're working on next.
 
 1. Round one should be fixing the line_item and order pages to show names of items and customers.
 2. Round two should be creating a 'dashboard' page to show total orders ranked by customers.
