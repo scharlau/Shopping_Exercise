@@ -2,37 +2,13 @@
 
 ## Shopping Exercise ##
 
-This is a 'deliberate practice' exercise for working with Rails. As before, the goal here is an example that lets us mess around to understand one part of a Rails application, and not to have a perfect example. To that end this is purely for exploring relationships.
+This is a 'deliberate practice' exercise for working with Rails. As before, the goal here is to have an example that lets us better understand one part of a Rails application, and not to have a perfect example. To that end this shopping example is purely for exploring relationships.
 
-This example is a simplified version of the 'Depot' example found in "Agile Web Development with Rails" from Pragmatic Programmers (https://pragprog.com/book/rails5/agile-web-development-with-rails-5) because it lets us quickly get to the relationships that we want to explore. You can use these commands to build this up from scratch yourself if you like, or just download the repository, skip down to the 'Exercises' part of this file, and start from there.
+This example is a simplified and modified version of the 'Depot' example found in "Agile Web Development with Rails" from Pragmatic Programmers (https://pragprog.com/book/rails5/agile-web-development-with-rails-5) We're using this example, because it lets us quickly get to the relationships that we want to explore. This example also uses the Faker Gem from https://github.com/stympy/faker to generate sample data for the application.
 
-## Build this yourself ##
+## Download and Do the Exercises ##
 
-rails generate scaffold Customer name email address
-
-rails generate scaffold Product name price:decimal
-
-rails generate scaffold Cart
-
-rails generate scaffold LineItem quantity:integer product:references cart:belongs_to
-
-rails generate scaffold Order customer:references
-
-rails generate migration add_order_to_line_item order:references
-
-With these in place we can modify a few of the models to finalise the relationships. Check the repository to see what was added to the models and controllers.
-
-We also want to generate fake data by using Faker Gem. Add this line to the 'development, test' group in the Gemfile:
-gem 'faker'
-Then we generate a task file with the command:
-
-    rails g task products seed_tables
-
-This will let us create a script in the generated file (lib/tasks/products.rake) to fill our tables automatically, so that we can then play with the relationships.
-
-## Do the Exercises ##
-
-Either build this as above, or just pull down the Git repository via download, or by cloning. Then run the script to populate your database with the command:
+You can pull down the Git repository via download, or by cloning. Then run the seed_tables script to populate your database with the command:
 
     bin/rake products:seed_tables
 
