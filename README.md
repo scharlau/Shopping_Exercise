@@ -6,18 +6,18 @@ This is a 'deliberate practice' exercise for working with Rails. As before, the 
 
 This example is a simplified and modified version of the 'Depot' example found in "Agile Web Development with Rails" from Pragmatic Programmers (https://pragprog.com/book/rails5/agile-web-development-with-rails-5) We're using this example, because it lets us quickly get to the relationships that we want to explore. This example also uses the Faker Gem from https://github.com/stympy/faker to generate sample data for the application.
 
-## Download and Do the Exercises ##
+## Do the Exercises ##
 
-You can pull down the Git repository via download, or by cloning. Then run the seed_tables script to populate your database with the command:
+Pull the Git repository via download, or by cloning to your computer. Then run the seed_tables script to populate your database with the command:
 
     bin/rake products:seed_tables
 
 This will generate data using the Faker gem that we can use in the exercises.
 You can now see the following items in the application:
-localhost:3000/customers
-localhost:3000/products
-localhost:3000/line_items
-localhost:3000/orders
+* localhost:3000/customers
+* localhost:3000/products
+* localhost:3000/line_items
+* localhost:3000/orders
 
 In their current state the line_items and orders pages are not very helpful, because they show Class objects where you'd expect to see a customer name, product name, or cart_id, although actually you don't need to ever see the cart_id, because it's only used as a staging area for the shopping cart.
 
