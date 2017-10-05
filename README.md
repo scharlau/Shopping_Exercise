@@ -1,6 +1,4 @@
-# README
-
-## Shopping Exercise ##
+# README for the Shopping Exercise #
 
 This is a 'deliberate practice' exercise for working with Rails. As before, the goal here is to have an example that lets us better understand one part of a Rails application, and not to have a perfect example. To that end this shopping example is purely for exploring relationships.
 
