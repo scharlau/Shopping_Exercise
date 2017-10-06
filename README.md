@@ -31,6 +31,8 @@ In their current state the line_items and orders pages are not very helpful, bec
 
 Work through the three rounds with a partner, or on your own, depending upon your circumstances. Each round should be twelve minutes, followed by a discussion of where you are and what has been working, as well as, what you're working on next.
 
+You may want to refer to the shopping/db/schema.rb file to better understand the database schema before you get started. Some of you might even want to diagram the schema.
+
 1. Round one should be fixing the line_item and order pages to show names of items and customers.
 2. Round two should be creating a 'dashboard' page to show total orders ranked by customers.
 3. Round three is making round two work when you scale up the database by changing the numbers in the seed_tables files to work with 50 customers and orders of 10 items per customer, or by setting it up so that you also have customers, who have no orders.
