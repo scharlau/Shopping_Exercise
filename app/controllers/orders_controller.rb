@@ -5,6 +5,19 @@ class OrdersController < ApplicationController
   # GET /orders.json
   def index
     @orders = Order.all
+
+    @order_pairs = []
+
+    @orders.each do |order|
+      total = 0.0
+      order.line_items.each do |line_item|
+      total = total.to_d + (line_item.quantity.to_d * line_item.product.price.to_d)
+
+      end
+        @order_pairs << [order.customer_id, total.to_d]
+    end
+
+
   end
 
   # GET /orders/1
