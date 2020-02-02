@@ -4,32 +4,43 @@ This is a 'deliberate practice' exercise for working with Rails. The goal is to 
 
 This example is a simplified and modified version of the 'Depot' example found in "Agile Web Development with Rails" from Pragmatic Programmers (https://pragprog.com/book/rails5/agile-web-development-with-rails-5) We're using this example, because it lets us quickly get to the relationships that we want to explore. This example also uses the Faker Gem from https://github.com/stympy/faker to generate sample data for the application.
 
+In this example the shopping cart doesn't work. That's something that I'll fix in a future update. For now it means you should not create cart objects as they will not show up on the page.
+
+That still leaves lots of other parts that can be made better in this application. 
+
 ## Setting Up the Exercises ##
 
-Pull this Git repository via download, or by cloning to your computer. After you have it unpacked on your macine, then open a console in that directory and run
+Step 1) Pull this Git repository via download, or by cloning to your computer. After you have it unpacked on your macine (and then uploaded to Cloud 9).
+
+Step 2) Cd into the 'shopping' directory, open a console and run
 
     bundle install
 
-To get all of the gems sorted. Now run the migrations with either rails or rake command depending upon your platform.
+To get all of the gems sorted. 
+
+Step 3) This app has tables so we need to run the migrations to set up the tables.
 
     rails db:migrate
 
-This will set up your database, and now you can run the seed_tables script to populate your database with the command:
+This will set up your database.
 
-    bin/rake products:seed_tables
+Step 4) Now you can run the seed_tables script to populate your database with the command:
+
+    rake products:seed_tables
 
 This will generate data using the Faker gem that we can use in the exercises.
+
+Step 5) Start the server and look at your app. 
+
 After you start the rails server you can now see the following items in the application:
 * localhost:3000/customers
 * localhost:3000/products
 * localhost:3000/line_items
 * localhost:3000/orders
 
-In their current state the line_items and orders pages are not very helpful, because they show Class objects where you'd expect to see a customer name, product name, or cart_id. Actually, you could remove the cart_id. You don't need to ever see the cart_id, because it's only used as a staging area for the shopping cart. 
+The customers and products pages are ok. You can ignore these for this exercise.
 
-In this example the shopping cart doesn't work. That's something that I'll fix in a future update. For now it means you should not create cart objects as they will not show up on the page.
-
-That still leaves lots of other parts that can be made better in this application. 
+The line_items and orders pages need your help. These show Class objects where you'd expect to see a customer name, product name, or cart_id. Actually, you could remove the cart_id. You don't need to ever see the cart_id, because it's only used as a staging area for the shopping cart. 
 
 ## Do the Work ##
 
