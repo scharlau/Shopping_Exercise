@@ -10,37 +10,37 @@ That still leaves lots of other parts that can be made better in this applicatio
 
 ## Setting Up the Exercises ##
 
-Step 1) Pull this Git repository via download, or by cloning to your computer. After you have it unpacked on your macine (and then uploaded to Cloud 9).
+Step 1) Pull this Git repository via download, or by cloning to your computer. If you're using Cloud 9 on AWS, then save to your machine, and then upload it to Cloud 9.
 
-Step 2) Cd into the 'shopping' directory, open a console and run
+Step 2) Open a terminal and cd into the 'shopping' directory, open a console and run
 
     bundle install
 
-To get all of the gems sorted. 
+This will install the gems for the application. 
 
 Step 3) This app has tables so we need to run the migrations to set up the tables.
 
     rails db:migrate
 
-This will set up your database.
+This will set up the tables in your database.
 
 Step 4) Now you can run the seed_tables script to populate your database with the command:
 
     rake products:seed_tables
 
-This will generate data using the Faker gem that we can use in the exercises.
+This will generate data using the Faker gem for the application, which we can display in our exercises.
 
 Step 5) Start the server and look at your app. 
 
-After you start the rails server you can now see the following items in the application:
+Step 6) After you start the rails server you can now see the following items in the application:
 * localhost:3000/customers
 * localhost:3000/products
 * localhost:3000/line_items
 * localhost:3000/orders
 
-The customers and products pages are ok. You can ignore these for this exercise.
+The customers and products pages are ok. You can ignore these for this exercise. 
 
-The line_items and orders pages need your help. These show Class objects where you'd expect to see a customer name, product name, or cart_id. Actually, you could remove the cart_id. You don't need to ever see the cart_id, because it's only used as a staging area for the shopping cart. 
+Focus on the line_items and orders pages as you do the exercises below. The line_items ane orders pages need your help. These show Class objects where you'd expect to see a customer name, product name, or cart_id. Actually, you could remove the cart_id. Users never need to ever see the cart_id, because it's only used as a staging area for the shopping cart. 
 
 ## Do the Work ##
 
