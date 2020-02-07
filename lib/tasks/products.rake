@@ -23,7 +23,7 @@ namespace :products do
     10.times do |index|
       Product.create!(
         name: Faker::Food.dish,
-        price: Faker::Number.decimal(2)
+        price: Faker::Number.number(digits: 2)
       )
     end
 
