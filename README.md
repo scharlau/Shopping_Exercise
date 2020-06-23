@@ -42,6 +42,9 @@ The customers and products pages are ok. You can ignore these for this exercise.
 
 Focus on the line_items and orders pages as you do the exercises below. The line_items ane orders pages need your help. These show Class objects where you'd expect to see a customer name, product name, or cart_id. Actually, you could remove the cart_id. Users never need to ever see the cart_id, because it's only used as a staging area for the shopping cart. 
 
+### A Comment on Table Relationships
+Pay attention to the table relationships, as this three-way relationship will be useful in later coursework. Look at the db/schema.rb file for details of how this works with customers, order, and line_items, plus products. In essence a customer adds items to their cart, when they go to complete the order this is tied to the customer, and then each line_item (which references a product_id) is tied to an order_id so that the items in each order are listed as new row in that table. 
+
 ## Do the Work ##
 
 Work through the three rounds with a partner, or on your own, depending upon your circumstances. Each round should be twelve minutes, followed by a discussion of where you are and what has been working, as well as, what you're working on next.
